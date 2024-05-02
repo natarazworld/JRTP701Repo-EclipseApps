@@ -17,6 +17,10 @@ public class App
 		return x*y;
 	}
 	
+	public int division(int x, int y) {
+		return x/y;
+	}
+	
     public static void main( String[] args )
     {
          App  app=new App();
