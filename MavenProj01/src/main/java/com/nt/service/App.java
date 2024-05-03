@@ -19,6 +19,11 @@ public class App {
 	public int division(int x, int y) {
 		return x / y;
 	}
+	
+	public    String   reverse(String name) {
+		   StringBuffer  sb=new StringBuffer(name);
+		   return  sb.reverse().toString();
+	}
 
 	public static void main(String[] args) {
 		App app = new App();
