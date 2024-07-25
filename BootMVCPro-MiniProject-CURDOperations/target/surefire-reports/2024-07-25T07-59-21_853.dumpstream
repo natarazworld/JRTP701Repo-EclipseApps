@@ -1,5 +1,0 @@
-# Created at 2024-07-25T07:59:22.376
-Boot Manifest-JAR contains absolute paths in classpath 'E:\Worskpaces\JRTP\JRTP701-IDE\BootMVCPro-MiniProject-CURDOperations\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-
