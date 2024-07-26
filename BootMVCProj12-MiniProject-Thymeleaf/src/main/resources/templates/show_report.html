@@ -1,0 +1,39 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous"/>
+
+
+   <div  class="container" th:if="${!empList.empty}">
+     <table class="table  table-hover" >
+        <tr>
+          <th>empno </th><th>emp name </th><th>emp desg </th> <th>emp salary </th> <th>deptno </th><th> operations </th>
+        </tr>
+            <tr th:each="emp:${empList}">
+              <td><span th:text="${emp.empno}"/></td>
+              <td><span th:text="${emp.ename}"/></td>
+              <td><span th:text="${emp.job}"/></td>
+              <td><span th:text="${emp.sal}"/></td>
+              <td><span th:text="${emp.deptno}"/></td>
+            <td><a th:href="@{/employee/edit(no=${emp.empno})}"><img th:src="@{/images/edit.png}" width="30px" height="30px"></a> &nbsp;&nbsp;&nbsp;
+                       <a th:href="@{/employee/delete(no=${emp.empno})}" onclick="return confirm(' are u sure to delete???')"><img th:src="@{/images/delete.jpg}" width="30px" height="30px"></a> 
+              </td>
+            </tr>
+     </table>
+   
+   </div>
+   <div class="container" th:if="${empList.empty}">
+       <h1 style="color:red;text-align:center"> Records not found  </h1>
+   </div>
+ <br><br><br>
+  
+   
+    <span  style="color:red;text-align:center;font-size:50px;font-family: arial" th:text="${resultMsg}"/>
+    
+ 
+<center>  <a th:href="@{/employee/register}">Register Employee <img th:src="@{/images/add.jpg}"  width="100px" height="100px"/></a></center>
+ 
+<br>
+<center>  <a th:href="@{./}">home <img th:src="@{/images/home.jpg}"  width="100px" height="100px"/></a></center>
