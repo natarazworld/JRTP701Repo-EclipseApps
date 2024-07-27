@@ -11,7 +11,7 @@
 	<groupId>nit</groupId>
 	<artifactId>BootMVCProj08-MiniProject-CURDOperations1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>BootMVCProj08-MiniProject-CURDOperations1</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
