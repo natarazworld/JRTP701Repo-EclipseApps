@@ -21,7 +21,7 @@ public class WishMessageServlet extends HttpServlet {
 		  // get PrintWriter
 		   PrintWriter pw=resp.getWriter();
 		   // write  the messages to  response object
-		   pw.println("<h1 style='color:red;text-align:center'> Good Morning  </h1>");
+		   pw.println("<h1 style='color:red;text-align:center'>Hello, Good Morning  </h1>");
 		   //home hyperlink
 		   pw.println("<br><br><a href='index.jsp'> home </a>");
 		  //close stream
