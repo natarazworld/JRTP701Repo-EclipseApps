@@ -1,3 +1,4 @@
+//WishMEssageOperationsController.java
 package com.nt.rest;
 
 import org.springframework.http.HttpStatus;
@@ -12,7 +13,7 @@ public class WishMessageOperationsController {
 	
 	@GetMapping("/display")
 	public   ResponseEntity<String>  showWishMessage(){
-		return  new ResponseEntity<String>("Good Morning  JTRP ",HttpStatus.OK);
+		return  new ResponseEntity<String>("Good Morning  JTRP 701 ",HttpStatus.OK);
 	}
 
 }
